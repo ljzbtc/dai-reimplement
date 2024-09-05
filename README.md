@@ -1,32 +1,30 @@
+# DAI Reimplementation
 
-# Foundry Starter Kit
+## Overview
 
-This is a custom Foundry starter kit for daily use in smart contract development.
+This project is a reimplementation of the DAI stablecoin smart contract, upgraded to Solidity 0.8.x. The primary goal is to improve code readability and maintainability, with a focus on better variable naming conventions.
 
-## Usage
+## Motivation
 
-### Deploying and Verifying a Contract
+The main reasons for this reimplementation are:
 
-1. Source your environment variables:
+1. Unusual and confusing variable naming in the original DAI implementation
+2. Upgrade to Solidity 0.8.x to leverage newer language features and optimizations
+3. Improve overall code readability and maintainability
 
-   ```
-   source .env
-   ```
-2. Run the deployment script:
+By addressing these issues, we aim to create a more understandable and maintainable version of the DAI contract.
 
-   ```
-   forge script --account dev --chain sepolia script/deployer.s.sol --rpc-url $SEPOLIA_RPC_URL --broadcast --verify -vvvv --sender 0x2cf56496f155914d84e6eda6e2c0076aeae5b0f0
-   ```
+## Features
 
-### Verifying an Already Deployed Contract
+- Upgraded to Solidity 0.8.x
+- Improved variable naming conventions
+- Enhanced code readability and structure
+- Leveraging Solidity 0.8.x built-in safeguards
 
-```
-forge verify-contract 0x50c56eb8e5c30992cba712246b72b94968263bb9 TradeDevil --chain sepolia
-```
+## License
 
-### Common Imports
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```solidity
-import {Test} from "forge-std/Test.sol";
-import {Script} from "forge-std/Script.sol";
-```
+## Disclaimer
+
+This is an experimental reimplementation focused on code readability improvements. It is not affiliated with or endorsed by the official MakerDAO team. This version prioritizes code clarity over extensive testing - use at your own risk.
