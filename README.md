@@ -4,6 +4,14 @@
 
 This project is a reimplementation of the DAI stablecoin smart contract, upgraded to Solidity 0.8.x. The primary goal is to improve code readability and maintainability, with a focus on better variable naming conventions.
 
+## Progress
+
+- [X] dai.sol => DaiERC20.sol
+- [ ] vat.sol
+- [ ] spot.osl
+- [ ] abaci.sol
+- [ ] cat.sol
+
 ## Motivation
 
 The main reasons for this reimplementation are:
