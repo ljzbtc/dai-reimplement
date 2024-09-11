@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 /// dai.sol -- Dai Stablecoin ERC-20 Token
 
@@ -25,7 +26,7 @@ Main ERC20 functions (like transfer, transferFrom, approve, etc.) and other cust
 
 */
 
-pragma solidity 0.8.0;
+
 
 contract Dai {
     ///////////////////
