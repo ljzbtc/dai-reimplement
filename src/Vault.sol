@@ -144,7 +144,7 @@ contract Vault {
 
     //
 
-    // ollateral gem is assigned to users with slip. this auth should be engine to control the collateral because it have the permission to change the collateral
+    // collateral gem is assigned to users with slip. this auth should be engine to control the collateral because it have the permission to change the collateral
     function slip(bytes32 ilk, address usr, int256 wad) external auth {
         gem[ilk][usr] = _add(gem[ilk][usr], wad);
     }
@@ -156,6 +156,7 @@ contract Vault {
         gem[ilk][dst] = _add(gem[ilk][dst], wad);
     }
 
+    // move dai 
     function move(address src, address dst, uint256 rad) external {
         require(wish(src, msg.sender), "Vat/not-allowed");
         dai[src] = _sub(dai[src], rad);
