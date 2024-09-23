@@ -9,6 +9,7 @@ This project is a reimplementation of the DAI stablecoin smart contract, upgrade
 - [X] dai.sol => DaiERC20.sol
 - [X] vat.sol =>[comment]
 - [X] spot.sol =>[comment]
+- [X] join.sol =>[comment]
 - [ ] abaci.sol
 - [ ] dog.sol
 - [ ] clip.sol
